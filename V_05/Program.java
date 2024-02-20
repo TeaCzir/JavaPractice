@@ -9,7 +9,7 @@ public class Program {
         System.out.print("Введите Ваше имя: ");
         String name = scanner.nextLine();
 
-        System.out.println("Привет " + name + "!");
+        System.out.println("Приветики " + name + "!");
         
     }
 }
