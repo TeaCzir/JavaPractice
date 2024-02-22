@@ -1,10 +1,13 @@
-package V_7;
+package V_07;
 
 import java.util.Scanner;
 
 public class Program {
     static Scanner scanner = new Scanner(System.in);
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         System.out.print("Введите Ваше имя: ");
