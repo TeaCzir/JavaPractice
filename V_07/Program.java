@@ -1,40 +1,25 @@
 package V_07;
-
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Program {
     static Scanner scanner = new Scanner(System.in);
-
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
 
         System.out.print("Введите Ваше имя: ");
         String name = scanner.nextLine();
 
-        if (name == "Vyacheslav") {
-            name = "Vyacheslav";
-            System.out.println("Ура! Это же Сам " + name + "!");
-            System.out.println("Здравствуйте Вячеслав Владимирович!");
-            if (name != "Vyacheslav") {
-                System.out.println("Привет, Привет, " + name + "!");
-                return;
-            }
-            return;
+        if (Objects.equals(name, "Oleg")) {
+            System.out.println("=========================");
+            System.out.println("Ура! Это же Сам Олег Иванович!");
+            System.out.println("Здравствуйте дорогой Олег Иванович! Проходите скорее.");
+            System.out.println("=========================");
         }
-
-        // if (name == "Vyacheslav"){
-        // System.out.print("Введите Ваше имя: ");
-        // String name1 = scanner.nextLine();
-        // System.out.println("Ура! Это же Сам " + name1 + "!");
-        // System.out.println("Здравствуйте Вячеслав Владимирович!");
-        // }
-        // if (name != "Vyacheslav") {
-        // System.out.println("Привет, Привет, " + name + "!");
-        // return;
-
-        // }
-
+        if (!Objects.equals(name, "Oleg")) {
+            System.out.println("=========================");
+            System.out.println("Привет, Привет, " + name + "!");
+            System.out.printf("Проходите сюда пожалуйста, %S\n",name,"!");
+            System.out.println("=========================");
+        }
     }
 }

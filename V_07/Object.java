@@ -1,9 +1,8 @@
-package com.example;
-
+package V_07;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Main {
+public class Object {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
@@ -11,9 +10,10 @@ public class Main {
         String name = scanner.nextLine();
 
         if (Objects.equals(name, "Oleg")) {
-            System.out.println("Ура! Это же Сам Олег!");
+            System.out.println("Ура! Это же Сам " + name + "!");
         }
-        else {
+        if (!Objects.equals(name, "Oleg")) {
+
             System.out.println("Привет, Привет, " + name + "!");
         }
     }
